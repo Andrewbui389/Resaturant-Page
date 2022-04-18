@@ -1,0 +1,70 @@
+@mixin containerSetup {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+body{
+    @include containerSetup;
+    background-image: url(../src/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    height: 100vh;
+}
+
+.buttonContainer{
+    @include containerSetup;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.buttonHead{
+    color: white;
+    font-size: 1em;
+    width: 5vw;
+    height: 5vh;
+    background-color: black;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonHead:hover{
+    color: black;
+    background-color: white;
+    transition-duration: 1s;
+}
+
+.onclick{
+    color: gray;
+    font-size: 1em;
+    width: 5vw;
+    height: 5vh;
+    background-color: gold;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.infoPage{
+    @include containerSetup;
+    color: black;
+    background-color: gray;
+    width: 40vw;
+    height: 100vh;
+    opacity: .5;
+    border-radius: 50px;;
+}
+
+.infoPagePic{
+    width: 30vw;
+    height: 25vh;
+    border-style: solid;
+    border-color: white;
+}
+
+
